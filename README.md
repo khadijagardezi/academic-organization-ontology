@@ -2,13 +2,13 @@
 
 An OWL ontology that models the structure of an academic organization: universities, departments, people, courses, and research projects. It was built in [Protégé](https://protege.stanford.edu/) for the Knowledge Representation course at the University of Verona.
 
-![Ontology overview](images/ontology-overview.png)
+<p align="center"><img src="images/ontology-overview.png" alt="Ontology overview" width="600"></p>
 
 ## Repository contents
 
 | Path | Description |
 | --- | --- |
-| [`kr_syeda.owl`](kr_syeda.owl) | The ontology in RDF/XML format |
+| [`project.owl`](project.owl) | The ontology in RDF/XML format |
 | [`docs/Academic Organization Ontology.pdf`](docs/Academic%20Organization%20Ontology.pdf) | Project report |
 | [`images/`](images/) | Protégé screenshots used in this README |
 
@@ -50,7 +50,7 @@ AcademicActivity
 | `participatesIn` | Person | ResearchProject |
 | `hasDepartment` | University | Department |
 
-![Object properties](images/object-properties.png)
+<p align="center"><img src="images/object-properties.png" alt="Object properties" width="500"></p>
 
 ### Data properties
 
@@ -67,21 +67,21 @@ AcademicActivity
 
 A small set of sample individuals shows how the ontology is used:
 
-- **UniversityOfVerona** (`University`) — `hasDepartment` ComputerScienceDepartment
+- **UniversityOfVerona** (`University`): `hasDepartment` ComputerScienceDepartment
 - **ComputerScienceDepartment** (`Department`)
 - **KnowledgeRepresentation** (`Course`)
-- **MatteoCristani** (`Professor`) — `teaches` KnowledgeRepresentation, `worksIn` ComputerScienceDepartment
-- **KhadijaGardezi** (`GraduateStudent`) — `enrolledIn` KnowledgeRepresentation, `studiesIn` ComputerScienceDepartment
+- **MatteoCristani** (`Professor`): `teaches` KnowledgeRepresentation, `worksIn` ComputerScienceDepartment
+- **KhadijaGardezi** (`GraduateStudent`): `enrolledIn` KnowledgeRepresentation, `studiesIn` ComputerScienceDepartment
 
-<p>
-  <img src="images/professor-individual.png" alt="Professor individual" width="48%">
-  <img src="images/student-individual.png" alt="Student individual" width="48%">
+<p align="center">
+  <img src="images/professor-individual.png" alt="Professor individual" width="400">
+  <img src="images/student-individual.png" alt="Student individual" width="400">
 </p>
 
 ## Getting started
 
 1. Install [Protégé](https://protege.stanford.edu/) (5.x or later).
-2. Open `kr_syeda.owl` via **File → Open**.
+2. Open `project.owl` via **File → Open**.
 3. Start a reasoner (for example HermiT) from **Reasoner → Start reasoner** to check consistency and compute inferred classes.
 
 ## Example DL queries
@@ -100,8 +100,5 @@ AcademicStaff and teaches some Course
 Person and worksIn value ComputerScienceDepartment
 ```
 
-![DL Query example](images/dl-query.png)
+<p align="center"><img src="images/dl-query.png" alt="DL Query example" width="600"></p>
 
-## Author
-
-Khadija Batool Gardezi — University of Verona
