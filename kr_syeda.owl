@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#"
+     xml:base="http://www.semanticweb.org/khadijagardezi/univr/academic-organization"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization"/>
+    
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#enrolledIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#enrolledIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#hasDepartment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#hasDepartment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#University"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#participatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#participatesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#ResearchProject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#studiesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#studiesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#supervises -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#supervises">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#AcademicStaff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#AcademicStaff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#worksIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#worksIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#courseCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#courseCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#courseCredits -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#courseCredits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#hasAge">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#hasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#staffID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#staffID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Staff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#studentID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#studentID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#AcademicActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#AcademicActivity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#AcademicStaff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#AcademicStaff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#AcademicUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#AcademicUnit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#AdministrativeStaff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#AdministrativeStaff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#AcademicActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#AcademicUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#GraduateStudent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#GraduateStudent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Student"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#enrolledIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#AcademicStaff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Professor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Professor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#AcademicStaff"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#teaches"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#ResearchProject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#ResearchProject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#AcademicActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#UndergraduateStudent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#UndergraduateStudent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#University">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#AcademicUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#ComputerScienceDepartment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#ComputerScienceDepartment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Department"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#KhadijaGardezi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#KhadijaGardezi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#GraduateStudent"/>
+        <enrolledIn rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#KnowledgeRepresentation"/>
+        <studiesIn rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#ComputerScienceDepartment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#KnowledgeRepresentation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#KnowledgeRepresentation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#MatteoCristani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#MatteoCristani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#Professor"/>
+        <teaches rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#KnowledgeRepresentation"/>
+        <worksIn rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#ComputerScienceDepartment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khadijagardezi/univr/academic-organization#UniversityOfVerona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#UniversityOfVerona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#University"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/khadijagardezi/univr/academic-organization#ComputerScienceDepartment"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
